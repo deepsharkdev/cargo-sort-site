@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Cargo Sort Support</title>
+    <style>
+      :root {
+        --bg: #eaf6fe;
+        --card: #ffffff;
+        --ink: #12233d;
+        --ink-2: #4e6385;
+        --line: #d5dce4;
+        --accent: #e06a00;
+        color-scheme: light;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0e1b30;
+          --card: #172b4a;
+          --ink: #eaf6fe;
+          --ink-2: #a9bad4;
+          --line: #29426a;
+          --accent: #ffb46b;
+          color-scheme: dark;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font:
+          16px/1.6 -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          sans-serif;
+        padding: 32px max(16px, env(safe-area-inset-right)) 64px
+          max(16px, env(safe-area-inset-left));
+      }
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 28px clamp(18px, 5vw, 40px);
+      }
+      h1 {
+        font-size: 28px;
+        line-height: 1.2;
+        margin: 0 0 4px;
+      }
+      h2 {
+        font-size: 19px;
+        margin: 28px 0 6px;
+      }
+      p,
+      ul {
+        margin: 8px 0;
+      }
+      ul {
+        padding-left: 22px;
+      }
+      a {
+        color: var(--accent);
+      }
+      .muted {
+        color: var(--ink-2);
+        font-size: 14px;
+      }
+      nav.langs {
+        display: flex;
+        gap: 8px;
+        margin: 0 0 20px;
+        flex-wrap: wrap;
+      }
+      nav.langs a {
+        text-decoration: none;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 4px 12px;
+        font-size: 14px;
+        color: var(--ink);
+      }
+      section + section {
+        border-top: 1px solid var(--line);
+        margin-top: 36px;
+        padding-top: 12px;
+      }
+      footer {
+        max-width: 720px;
+        margin: 16px auto 0;
+        font-size: 13px;
+        color: var(--ink-2);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav class="langs" aria-label="Language">
+        <a href="#en">English</a><a href="#ru">Русский</a><a href="#tr">Türkçe</a>
+      </nav>
+      <section id="en" lang="en">
+        <h1>Cargo Sort Support</h1>
+        <p>
+          Sort the containers by colour and ship the trucks. Questions, bugs or ideas? Write to
+          <a href="mailto:serikabdurahman@gmail.com">serikabdurahman@gmail.com</a>. Please include
+          your device model and the game version (Settings, at the bottom).
+        </p>
+        <ul>
+          <li>
+            <b>Lost progress?</b> Progress is stored on your device only. It survives updates; it
+            does not survive deleting the game unless your device backup restores it.
+          </li>
+          <li>
+            <b>Change ad privacy choices:</b> in the game, Settings → Privacy settings (shown in the
+            EEA, UK and Switzerland). On iPhone also Settings → Privacy &amp; Security → Tracking.
+          </li>
+          <li>
+            <a href="/cargo-sort/privacy/">Privacy Policy</a> ·
+            <a href="/cargo-sort/terms/">Terms of Use</a>
+          </li>
+        </ul>
+      </section>
+      <section id="ru" lang="ru">
+        <h1>Поддержка Cargo Sort</h1>
+        <p>
+          Сортируйте контейнеры по цветам и отправляйте грузовики. Вопросы, ошибки или идеи? Пишите
+          на <a href="mailto:serikabdurahman@gmail.com">serikabdurahman@gmail.com</a>. Укажите,
+          пожалуйста, модель устройства и версию игры (внизу экрана настроек).
+        </p>
+        <ul>
+          <li>
+            <b>Пропал прогресс?</b> Прогресс хранится только на устройстве. Он сохраняется при
+            обновлениях, но удаляется вместе с игрой, если его не восстановит резервная копия
+            устройства.
+          </li>
+          <li>
+            <b>Изменить выбор по рекламе:</b> в игре Настройки → Настройки конфиденциальности (в
+            ЕЭЗ, Великобритании и Швейцарии). На iPhone также Настройки → Конфиденциальность и
+            безопасность → Отслеживание.
+          </li>
+          <li>
+            <a href="/cargo-sort/privacy/#ru">Политика конфиденциальности</a> ·
+            <a href="/cargo-sort/terms/#ru">Условия использования</a>
+          </li>
+        </ul>
+      </section>
+      <section id="tr" lang="tr">
+        <h1>Cargo Sort Destek</h1>
+        <p>
+          Konteynerleri renklerine göre ayırın ve kamyonları yola çıkarın. Sorularınız, hatalar veya
+          fikirleriniz mi var?
+          <a href="mailto:serikabdurahman@gmail.com">serikabdurahman@gmail.com</a> adresine yazın.
+          Lütfen cihaz modelinizi ve oyun sürümünü (Ayarlar ekranının altında) belirtin.
+        </p>
+        <ul>
+          <li>
+            <b>İlerleme mi kayboldu?</b> İlerleme yalnızca cihazınızda saklanır. Güncellemelerde
+            korunur, ancak cihaz yedeğiniz geri yüklemezse oyun silindiğinde kaybolur.
+          </li>
+          <li>
+            <b>Reklam gizlilik seçimlerini değiştirmek için:</b> oyunda Ayarlar → Gizlilik ayarları
+            (AEA, Birleşik Krallık ve İsviçre’de gösterilir). iPhone’da ayrıca Ayarlar → Gizlilik ve
+            Güvenlik → İzleme.
+          </li>
+          <li>
+            <a href="/cargo-sort/privacy/#tr">Gizlilik Politikası</a> ·
+            <a href="/cargo-sort/terms/#tr">Kullanım Koşulları</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      Cargo Sort by Ayly Pikir Ummany · <a href="/cargo-sort/">Support</a> ·
+      <a href="/cargo-sort/privacy/">Privacy</a> · <a href="/cargo-sort/terms/">Terms</a>
+    </footer>
+  </body>
+</html>
